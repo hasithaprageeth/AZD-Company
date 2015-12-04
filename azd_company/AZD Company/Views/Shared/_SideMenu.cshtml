@@ -1,0 +1,109 @@
+﻿<style>
+    .fa {
+        color:#0058FF;
+        font-size:15px;
+    }
+
+</style>
+
+<div class="nav-side-menu">
+   
+    <div class="brand">
+        <img src="~/Content/Images/logo%20AZD.png" style="width:150px; height: auto;" /></div>
+    <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+
+    <div class="menu-list">
+
+        <ul id="menu-content" class="menu-content collapse out">
+            @*<li>
+                <a href="#">
+                    <i class="fa fa-dashboard fa-lg"></i> Dashboard
+                </a>
+            </li>*@
+
+            @*<li data-toggle="collapse" data-target="#products" class="collapsed active">
+                <a href="#"><i class="fa fa-gift fa-lg"></i> UI Elements <span class="arrow"></span></a>
+            </li>
+            <ul class="sub-menu collapse" id="products">
+                <li class="active"><a href="#">CSS3 Animation</a></li>
+                <li><a href="#">General</a></li>
+                <li><a href="#">Buttons</a></li>
+                <li><a href="#">Tabs & Accordions</a></li>
+                <li><a href="#">Typography</a></li>
+                <li><a href="#">FontAwesome</a></li>
+                <li><a href="#">Slider</a></li>
+                <li><a href="#">Panels</a></li>
+                <li><a href="#">Widgets</a></li>
+                <li><a href="#">Bootstrap Model</a></li>
+            </ul>*@
+           
+
+            <li data-toggle="collapse" data-target="#service" class="collapsed">
+                <a href="#"><i class="fa fa-shopping-cart" style="color: #0058FF"></i> Sales <span class="arrow"></span></a>
+            </li>
+            <ul class="sub-menu collapse" id="service">
+                <li data-toggle="collapse" data-target="#Products" class="collapsed">
+                    <i class="fa fa-cogs " style="color: #0058FF"></i> Products<span class="arrow"></span>
+                </li>
+                        <ul class="sub-menu2 collapse" id="Products">
+                            <li>@Html.ActionLink("Engines", "Index", "SalesProducts", routeValues: null, htmlAttributes: new { title = "Engines" })</li>
+                            
+                        </ul>
+                <li><i class="fa fa-star "></i> @Html.ActionLink("Sales Orders", "Index", "SalesOrder", routeValues: null, htmlAttributes: new { title = "SalesOrders" })</li>
+                <li><i class="fa fa-paperclip"></i> Sales Reports<span class="arrow"></span></li>
+                </ul>
+
+
+            <li data-toggle="collapse" data-target="#new" class="collapsed">
+                <a href="#"><i class="fa fa-usd " style="color: #0058FF"></i> Financial <span class="arrow"></span></a>
+            </li>
+            <ul class="sub-menu collapse" id="new">
+                <li>@Html.ActionLink("Finance Request", "Index", "FinanceRequest", routeValues: null, htmlAttributes: new { title = "SalesOrders" })</li>
+                <li>@Html.ActionLink("Cash Out", "Index", "CashIn", routeValues: null, htmlAttributes: new { title = "SalesOrders" })</li>
+                <li>@Html.ActionLink("Cash In", "Index", "CashOut", routeValues: null, htmlAttributes: new { title = "SalesOrders" })</li>
+            </ul>
+
+            <li data-toggle="collapse" data-target="#Producton" class="collapsed">
+                <a href="#">
+                    <i class="fa fa-cogs"></i> Production
+                    <span class="arrow"></span>
+                </a>
+
+            </li>
+            <ul class="sub-menu collapse" id="Producton">
+                <li>
+                    <i ></i>@Html.ActionLink("Production Order", "Index", "ProductionOrder", routeValues: null, htmlAttributes: new { title = "Engines" })
+                </li>
+
+                <li>
+                    <i ></i> @Html.ActionLink("Production Cost", "Index", "Production", routeValues: null, htmlAttributes: new { title = "Engines" })
+                </li>
+              
+            </ul>
+
+            <li data-toggle="collapse" data-target="#Purchase" class="collapsed">
+                <a href="#">
+                    <i class="fa fa-cogs" style="color: #0058FF"></i> Purchase
+                    <span class="arrow"></span>
+                </a>
+
+            </li>
+            <ul class="sub-menu collapse" id="Purchase">
+                <li>
+                    <i></i>@Html.ActionLink("Purchase Order", "Index", "PurchaseOrder", routeValues: null, htmlAttributes: new { title = "Engines" })
+                </li>
+
+                <li>
+                    <i></i> @Html.ActionLink("Purchase Delivered", "Index", "PurchaseDilivered", routeValues: null, htmlAttributes: new { title = "Engines" })
+                </li>
+
+            </ul>
+        
+
+
+
+            @Html.Partial("_LoginPartial")
+        </ul>
+       
+    </div>
+</div>
