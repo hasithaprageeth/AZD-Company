@@ -170,6 +170,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\FinanceController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -188,31 +189,36 @@
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\Images\logo AZD.png" />
     <Content Include="Content\SideMenu.css" />
+    <Content Include="Content\styles.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Scripts\bootstrap.js" />
-    <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="Scripts\jquery-2.1.4.js" />
-    <Content Include="Scripts\jquery-2.1.4.min.js" />
-    <Content Include="Scripts\jquery-2.1.4.min.map" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Views\Shared\Scripts\bootstrap.js" />
+    <Content Include="Views\Shared\Scripts\bootstrap.min.js" />
+    <Content Include="Views\Shared\Scripts\jquery-2.1.4.js" />
+    <Content Include="Views\Shared\Scripts\jquery-2.1.4.min.js" />
+    <Content Include="Views\Shared\Scripts\jquery-2.1.4.min.map" />
     <Content Include="fonts\fontawesome-webfont.woff2" />
     <Content Include="fonts\fontawesome-webfont.woff" />
     <Content Include="fonts\fontawesome-webfont.ttf" />
     <Content Include="fonts\fontawesome-webfont.eot" />
     <Content Include="fonts\FontAwesome.otf" />
     <Content Include="Content\font-awesome.css.map" />
-    <None Include="Scripts\jquery.validate-vsdoc.js" />
-    <None Include="Scripts\jquery-2.1.4-vsdoc.js" />
-    <Content Include="Scripts\jquery.validate.js" />
-    <Content Include="Scripts\jquery.validate.min.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
-    <Content Include="Scripts\respond.js" />
-    <Content Include="Scripts\respond.min.js" />
-    <Content Include="Scripts\_references.js" />
+    <Content Include="Views\Finance\Welcome.cshtml" />
+    <None Include="Views\Shared\Scripts\jquery.validate-vsdoc.js" />
+    <None Include="Views\Shared\Scripts\jquery-2.1.4-vsdoc.js" />
+    <Content Include="Views\Shared\Scripts\jquery.validate.js" />
+    <Content Include="Views\Shared\Scripts\jquery.validate.min.js" />
+    <Content Include="Views\Shared\Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Views\Shared\Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Views\Shared\Scripts\respond.js" />
+    <Content Include="Views\Shared\Scripts\respond.min.js" />
+    <Content Include="Views\Shared\Scripts\_references.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -232,6 +238,7 @@
     <Content Include="Views\Shared\_SideMenu.cshtml" />
     <Content Include="Views\Account\Temp.cshtml" />
     <Content Include="Views\Account\RegisterUser.cshtml" />
+    <Content Include="Views\Finance\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

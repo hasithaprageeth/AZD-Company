@@ -3,28 +3,24 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title - AZD Company</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-
 </head>
+
 <body>
-
-
     <div class="row">
         <div class="col-sm-3">
          @Html.Partial("_SideMenu")   
 
         </div> 
         <div class="col-sm-9">
-            @RenderBody()
-          
+            @RenderBody()          
         </div>
-
     </div>
     <hr />
     <footer>
-        <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        <p id="footer">&copy; @DateTime.Now.Year - <span id="themecolor">AZD Company</span></p>
     </footer>
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")

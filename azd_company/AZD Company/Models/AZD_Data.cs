@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 
@@ -386,6 +387,17 @@ namespace AZD_Company.Models
         public Decimal Income { get; set; }
         public Decimal Outcome { get; set; }
         public Decimal Profit { get; set; }
+    }
+    #endregion
+
+    #region DBContext
+    public class AZDDBContext : DbContext
+    {
+        public DbSet<MonthlySummeryReport> MonthlySummeryReport { get; set; }
+        public DbSet<CashInFlaws> CashInFlaws { get; set; }
+        public DbSet<CashOutFlaws> CashOutFlaws { get; set; }
+
+        public DbSet<SalesCash> SalesCash { get; set; }
     }
     #endregion
 }
